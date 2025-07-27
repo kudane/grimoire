@@ -3,7 +3,9 @@ Parse, don’t validate
 https://lexi-lambda.github.io/blog/2019/11/05/parse-don-t-validate/
 
 แค่ validate อย่างเดียวไม่พอ—ควร parse input เพื่อให้ได้ข้อมูลในรูปแบบ type ที่ปลอดภัยตั้งแต่แรก
+
 ✅ Validation = ตรวจว่าข้อมูลเข้าข่ายไหม → แต่ยังเป็น raw type เดิม
+
 ✅ Parsing = validate + แปลง → ได้ type ใหม่ที่บังคับ invariant ครบสมบูรณ์
 
 ### สรุปสั้นๆ
