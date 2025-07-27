@@ -17,7 +17,7 @@ Parsing คือการแปลงข้อมูลจากรูปแบ
 
 ยังเป็นแนวคิดเดียวกับ refined types หรือ newtypes ที่สร้าง type ใหม่ เช่น EmailAddress, NonEmptyList ฯลฯ ให้ใช้แทน primitive types เพื่อ “make impossible states impossible”  
 
-'''c#
+```c#
 // 1. Validate แบบเดิม (ยังเป็น string)
 void Register(string email) {
     if (!IsValidEmail(email)) throw new ArgumentException("Invalid");
@@ -43,4 +43,4 @@ Register(new EmailAddress("user@x.com"));       // ✅
 Register(EmailAddress.Parse("user@x.com"));      // ✅
 Register(EmailAddress.Parse("bad"));             // ❌ exception
 Register("user@x.com");                          // ❌ ไม่คอมไพล์
-'''
+```
