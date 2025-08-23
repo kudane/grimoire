@@ -50,7 +50,7 @@ WHERE [Id] = @p1;
 InvalidOperationException ข้อผิดพลาดคือ “cannot be tracked because another instance with the same key is already being tracked”.
 บทสรุป
 
-    ใช้ Tracking Query สำหรับงานทั้งโปรเจค ถ้าไม่ต้องการเน้นประสิทธิภาพมาก
-    ใช้ Attach สำหรับ partial update สำหรับงานที่ต้องการความเร็วลดโหลดฐานข้อมูล
-    ใช้ Attach อย่างระมัดระวัง ควรตรวจสอบ scenario ที่จะใช้ให้รอบคอบ
-    อย่าใช้ Update() โดยไม่จำเป็น เพราะจะอัพเดททุก column แม้ไม่เปลี่ยนค่า
+- ใช้ Tracking Query สำหรับงานทั้งโปรเจค ถ้าไม่ต้องการเน้นประสิทธิภาพมาก
+- ใช้ Attach สำหรับ partial update สำหรับงานที่ต้องการความเร็วลดโหลดฐานข้อมูล
+- ใช้ Attach อย่างระมัดระวัง ควรตรวจสอบ scenario ที่จะใช้ให้รอบคอบ
+- อย่าใช้ Update() โดยไม่จำเป็น เพราะจะอัพเดททุก column แม้ไม่เปลี่ยนค่า
