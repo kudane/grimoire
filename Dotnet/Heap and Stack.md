@@ -7,10 +7,10 @@ CLR ยังมี Garbage Collector (GC) ที่จัดการลบ obj
 
 ## Heap ทำงานอย่างไร
 
-    Heap ใช้เก็บข้อมูลประเภท reference type เช่น class, array, string
-    ทุกครั้งที่ใช้ new จะมีการจอง memory บน Heap
-    ข้อมูลบน Heap จะถูกเข้าถึงผ่าน reference pointer ที่อยู่ใน Stack
-    การเคลียร์หน่วยความจำบน Heap เกิดจาก Garbage Collector (GC) ที่ทำงานแบบอัตโนมัติ โดยใช้เทคนิค Mark-and-Sweep หรือ Generation-based Collection
+- Heap ใช้เก็บข้อมูลประเภท reference type เช่น class, array, string
+- ทุกครั้งที่ใช้ new จะมีการจอง memory บน Heap
+- ข้อมูลบน Heap จะถูกเข้าถึงผ่าน reference pointer ที่อยู่ใน Stack
+- การเคลียร์หน่วยความจำบน Heap เกิดจาก Garbage Collector (GC) ที่ทำงานแบบอัตโนมัติ โดยใช้เทคนิค Mark-and-Sweep หรือ Generation-based Collection
 
 ```c#
 class Person { public string Name { get; set; } }
@@ -22,10 +22,10 @@ void Example() {
 
 ## Stack ทำงานอย่างไร
 
-    Stack เป็น memory ที่ทำงานแบบ LIFO (Last In First Out)
-    ใช้เก็บ local variables, parameters และ return address ของ method
-    ตัวแปร value type (int, bool, struct) จะถูกเก็บตรงบน Stack
-    เมื่อ method ทำงานเสร็จ ตัวแปรบน Stack จะถูกลบออกโดยอัตโนมัติ
+- Stack เป็น memory ที่ทำงานแบบ LIFO (Last In First Out)
+- ใช้เก็บ local variables, parameters และ return address ของ method
+- ตัวแปร value type (int, bool, struct) จะถูกเก็บตรงบน Stack
+- เมื่อ method ทำงานเสร็จ ตัวแปรบน Stack จะถูกลบออกโดยอัตโนมัติ
 
 ```c#
 void Add(int a, int b) {
@@ -33,7 +33,7 @@ void Add(int a, int b) {
 }
 ```
 
-##Heap และ Stack เกี่ยวข้องกันไหม
+## Heap และ Stack เกี่ยวข้องกันไหม
 
 ทั้งสองเกี่ยวข้องกันโดยตรง
     เมื่อสร้าง object (new) CLR จะจองพื้นที่ใน Heap และเก็บ reference pointer ของ object ไว้ใน Stack
