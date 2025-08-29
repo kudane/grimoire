@@ -24,7 +24,7 @@ person.showInfo();
 console.log(person.name);
 ```
 
-# หน้าของ Object
+# โครงสร้างของ Object
 ```js
 Person {name: "Alice", showInfo: function()...}
   name: "Alice"
