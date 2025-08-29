@@ -13,7 +13,7 @@ function Person(name) {
   this.name = name;
 
   this.showInfo = function () {
-    console.log(`Person: ${alice.name}`);
+    console.log(`Person: ${this.name}`);
   };
 }
 
