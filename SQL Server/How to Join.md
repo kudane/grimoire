@@ -11,11 +11,13 @@ outer join E on ...
 ````
 
 การ join จะทำงานอย่างไร? ฉันเข้าใจเป็นแบบนี้ 
+```
 A join B                  = TempA_B
 TempA_B left join         = TempA_B_C 
 TempA_B_C right join      = TempA_B_C_D 
 TempA_B_C_D outer join E  = TempA_B_C_D_E 
 จับคู่ที่ละ join ไปเรื่อยๆ ตามลำดับ
+```
 
 ### ถูกต้อง หลักการคือ ประมวลผล join ทีละตัวจากซ้ายไปขวา
 ```sql
