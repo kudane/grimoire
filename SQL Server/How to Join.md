@@ -30,6 +30,7 @@ FULL OUTER JOIN E ON ...
 ```
 
 ### การทำงานคือ
+```
 A JOIN B
 → ได้ชุดชั่วคราว TempA_B
 
@@ -41,6 +42,7 @@ TempA_B_C RIGHT JOIN D
 
 TempA_B_C_D FULL OUTER JOIN E
 → ได้ TempA_B_C_D_E โดยคงทุกแถวจากทั้ง TempA_B_C_D และ E
+```
 
 สรุป:
 Join จะทำงาน “ซ้อน” กันทีละขั้น
