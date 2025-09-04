@@ -1,0 +1,3 @@
+- การสร้าง prototype 
+- การกำหนด fn ใน prototype 
+- ปรับใช้ chain
