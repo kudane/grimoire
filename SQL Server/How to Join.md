@@ -48,3 +48,41 @@ TempA_B_C_D FULL OUTER JOIN E
 Join จะทำงาน “ซ้อน” กันทีละขั้น
 คำสั่ง ON แต่ละตัวจะถูกใช้ตอน join นั้นๆ เท่านั้น
 ลำดับมีผลสำคัญ ถ้าเปลี่ยนลำดับหรือวงเล็บ ผลลัพธ์อาจไม่เหมือนเดิม
+
+### การประกอบข้อมูล (Combine)
+
+ON Clause จะเชื่อมข้อมูลจากตารางต่าง ๆ เข้าด้วยกันตามเงื่อนไข เช่น
+
+```sql
+SELECT e.EmployeeID, e.Name, d.DepartmentName
+FROM Employees e
+JOIN Departments d
+   ON e.DepartmentID = d.DepartmentID;
+```
+
+* ตรงนี้ ON ทำหน้าที่ **ประกอบข้อมูล** คือ เอา EmployeeID, Name มาจับคู่กับ DepartmentName โดยใช้ DepartmentID ที่ตรงกัน
+* ผลลัพธ์จะได้ “ข้อมูลที่มีบริบทครบ” ซึ่งมาจากสองตาราง
+
+---
+
+### การกรองข้อมูล (Filter)
+
+ON Clause ยังทำหน้าที่กรองข้อมูลไปพร้อมกัน เช่น
+
+```sql
+SELECT o.OrderID, o.OrderDate, c.CustomerName
+FROM Orders o
+LEFT JOIN Customers c
+   ON o.CustomerID = c.CustomerID
+   AND c.IsActive = 1;
+```
+
+* การ JOIN จะเชื่อม Orders เข้ากับ Customers **เฉพาะลูกค้าที่ Active เท่านั้น**
+* ถ้าลูกค้าไม่ Active เงื่อนไข ON จะไม่ match ทำให้ค่าจากฝั่ง Customers เป็น NULL
+
+---
+
+**สรุปสั้น:**
+
+* ON = รวมข้อมูลให้เชื่อมกัน (combine)
+* ON = กรองข้อมูลตามเงื่อนไขไปด้วย (filter)
