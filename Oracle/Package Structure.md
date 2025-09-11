@@ -14,7 +14,6 @@ CREATE OR REPLACE PACKAGE pkg_demo IS
   PROCEDURE add_order(p_id NUMBER, p_name VARCHAR2);
   PROCEDURE list_orders(p_cur OUT t_cursor);
 END pkg_demo;
-/
 ```
 
 ตัวอย่างนี้ประกาศว่า package `pkg_demo` มี procedure สองตัวที่สามารถเรียกใช้ได้จากภายนอก
@@ -46,7 +45,6 @@ CREATE OR REPLACE PACKAGE BODY pkg_demo IS
   END;
 
 END pkg_demo;
-/
 ```
 
 ในตัวอย่างนี้ มีการสร้างตัวแปร `v_counter` ที่เป็น private และใส่โค้ดการทำงานจริงของ procedure ที่ประกาศไว้ใน header
