@@ -2,9 +2,9 @@
 
 * **สาเหตุหลัก**
 
-  1. ข้อมูลที่ client ส่ง > limit ของ WCF binding (`maxReceivedMessageSize`, `maxBufferSize`, `readerQuotas`)
-  2. Host ที่เป็น IIS มี limit เอง (`maxAllowedContentLength` ใน `<requestFiltering>`)
-  3. ใช้ **Buffered transfer** ซึ่งต้องโหลดทั้งหมดเข้า memory ก่อน ทำให้เจอ limit เร็ว
+  * ข้อมูลที่ client ส่ง > limit ของ WCF binding (`maxReceivedMessageSize`, `maxBufferSize`, `readerQuotas`)
+  * Host ที่เป็น IIS มี limit เอง (`maxAllowedContentLength` ใน `<requestFiltering>`)
+  * ใช้ **Buffered transfer** ซึ่งต้องโหลดทั้งหมดเข้า memory ก่อน ทำให้เจอ limit เร็ว
 
 * **แนวทางแก้**
 
