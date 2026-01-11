@@ -1,3 +1,4 @@
+```c#
 builder.Services.AddProblemDetails(options =>
 {
     options.CustomizeProblemDetails = context =>
@@ -33,3 +34,4 @@ builder.Services.AddProblemDetails(options =>
         context.ProblemDetails.Extensions["traceId"] = context.HttpContext.TraceIdentifier;
     };
 })
+```
