@@ -18,7 +18,7 @@ for example (Angular)
         <rule name="Proxy to JSONPlaceholder API" stopProcessing="true">
           <!-- when path start with "/api" -->
           <!-- call: http://localhost:4200/api/todos -->
-          <!-- call-rewite-to: http://localhost:4200/api/todos -->
+          <!-- call-rewite-to: https://jsonplaceholder.typicode.com/todos -->
           <!-- {R:1} is (.*) -->
           <match url="^api/(.*)" />
           <action type="Rewrite" url="https://jsonplaceholder.typicode.com/{R:1}" />
