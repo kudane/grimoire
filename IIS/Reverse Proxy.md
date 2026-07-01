@@ -3,7 +3,7 @@ Frontend(Reverse Proxy)
 1) install URL Rewrite Module 2.1
 2) install Application Request Routing Cache 3
     - (Checked) Enable proxy
-3) create Web.config
+3) create Web.config or rules (rewrite url)
 
 for example (Angular)
 
