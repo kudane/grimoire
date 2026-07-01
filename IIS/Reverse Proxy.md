@@ -24,7 +24,7 @@ for example (Angular)
           <action type="Rewrite" url="https://jsonplaceholder.typicode.com/{R:1}" />
         </rule>
 
-        <!-- match frontend router only -->
+        <!-- match frontend router -->
         <rule name="Angular Routes" stopProcessing="true">
           <match url=".*" />
           <conditions logicalGrouping="MatchAll">
