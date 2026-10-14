@@ -1,4 +1,4 @@
-# B U S I N E S S &nbsp;&nbsp;&nbsp; T O &nbsp;&nbsp;&nbsp; C O D E
+# B U S I N E S S &nbsp;&nbsp; T O &nbsp;&nbsp; C O D E
 
 ![คำอธิบายรูป](https://github.com/kudane/grimoire/blob/main/Business%20to%20Code/define%20business%20to%20procedure%20of%20code.jpg?raw=true)
 
