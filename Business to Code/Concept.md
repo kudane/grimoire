@@ -1,6 +1,4 @@
-# B U S I N E S S &nbsp;&nbsp; T O &nbsp;&nbsp; C O D E
-
-![คำอธิบายรูป](https://github.com/kudane/grimoire/blob/main/Business%20to%20Code/define%20business%20to%20procedure%20of%20code.jpg?raw=true)
+# B U S I N E S S &nbsp;&nbsp;&nbsp; T O &nbsp;&nbsp;&nbsp; C O D E
 
 การเชื่อมโยงความต้องการทางธุรกิจสู่การเขียนโค้ด สามารถแบ่งกระบวนการทำงานออกเป็น 4 เสาหลักสำคัญ เพื่อให้ระบบมีโครงสร้างที่ชัดเจน ดูแลรักษาง่าย และมีการแยกส่วนความรับผิดชอบ (Separation of Concerns) อย่างเหมาะสม
 
@@ -12,7 +10,7 @@
 
 <br>
 
-# F E T C H   &   G U A R D
+# F E T C H &nbsp;&nbsp;&nbsp; & &nbsp;&nbsp;&nbsp; G U A R D
 
 ขั้นตอนพื้นฐานก่อนที่ตรรกะทางธุรกิจ (Business Logic) จะทำงาน โดยระบบต้องรวบรวมบริบทและข้อมูลที่จำเป็นทั้งหมด พร้อมทั้งตรวจสอบความถูกต้องของการดำเนินการล่วงหน้า
 
@@ -22,7 +20,7 @@
 
 <br>
 
-# C L A S S I F Y   &   P A R T I T I O N
+# C L A S S I F Y &nbsp;&nbsp;&nbsp; & &nbsp;&nbsp;&nbsp; P A R T I T I O N
 
 การจัดระเบียบข้อมูลหลังจากขั้นตอนการดึงและตรวจสอบ โดยแบ่งข้อมูลดิบออกเป็นกลุ่มย่อยตามเจตนาทางธุรกิจ (Business Intent) เพื่อเตรียมความพร้อมก่อนการประมวลผล
 
@@ -32,7 +30,7 @@
 
 <br>
 
-# E X E C U T E   D O M A I N   B E H A V I O R S
+# E X E C U T E &nbsp;&nbsp;&nbsp; D O M A I N &nbsp;&nbsp;&nbsp; B E H A V I O R S
 
 ขั้นตอนการสร้างคุณค่าทางธุรกิจ (Business Value) โดยนำข้อมูลที่ถูกคัดแยกและจัดกลุ่มไว้มาประมวลผลตามกฎทางธุรกิจ (Business Rules) ซึ่งถือเป็นหัวใจสำคัญของการทำงาน
 
@@ -43,7 +41,7 @@
 
 <br>
 
-# P E R S I S T   &   R E T U R N
+# P E R S I S T &nbsp;&nbsp;&nbsp; & &nbsp;&nbsp;&nbsp; R E T U R N
 
 ขั้นตอนการบันทึกผลลัพธ์จากการเปลี่ยนแปลงสถานะให้คงอยู่ถาวร (Persistence) และส่งคืนผลลัพธ์การทำงานที่เป็นมาตรฐานกลับไปยังผู้เรียกใช้
 
