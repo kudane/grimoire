@@ -1,4 +1,4 @@
-# KEY TYPE
+#  K E Y &nbsp;&nbsp;&nbsp; T Y P E
 
 ## คีย์ (Key) แต่ละประเภท
 
